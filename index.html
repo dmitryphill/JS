@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tasks</title>
+    <link rel="stylesheet" href='style.css'>
+</head>
+<body>
+    <div class="studentList">
+        <p>Students list</p>
+        <div id="first"></div>
+        <div id="second"></div>
+        <div id="third"></div>
+        <div id="fourth"></div>
+        <div id="fifth"></div>
+        <div id="sixth"></div>
+        <div id="seventh"></div>
+    </div>
+    <br>
+    <div class="sortedByName">
+        <p>Sorted by Name</p>
+        <div id="first2"></div>
+        <div id="second2"></div>
+        <div id="third2"></div>
+        <div id="fourth2"></div>
+        <div id="fifth2"></div>
+        <div id="sixth2"></div>
+        <div id="seventh2"></div>
+    </div>
+    <br>
+    <div class="sortedByRating">
+        <p>Sorted by rating</p>
+        <div id="first3"></div>
+        <div id="second3"></div>
+        <div id="third3"></div>
+        <div id="fourth3"></div>
+        <div id="fifth3"></div>
+        <div id="sixth3"></div>
+        <div id="seventh3"></div>
+    </div>
+    <br>
+    <div class="maxMarkStudent"><p>Maximum mark student</p><div id="maxMark"></div></div>
+    <br>
+    <div class="minMarkStudent"><p>Minimum mark student</p><div id="minMark"></div></div>
+    <br>
+    <div class="averageMarkStudent"><p>Average mark student</p><div id="averageMark"></div></div>
+    <br>
+    <div class="rateList">
+        <p>Rate list of students in %</p>
+        <div id="first4"></div>
+        <div id="second4"></div>
+        <div id="third4"></div>
+        <div id="fourth4"></div>
+        <div id="fifth4"></div>
+        <div id="sixth4"></div>
+        <div id="seventh4"></div>
+    </div>
+    <br>
+    <div class="passwordForm">
+            <input type="number" id="passwordCharNum">
+            <label for="onlyChars">Enter your number of password characters</label>
+            <br>
+            <input type="radio" id="onlyChars" name="password" value="onlyChars" checked>
+            <label for="onlyChars">Create your password with characters only</label>
+            <br>
+            <input type="radio" id="CharsNumbers" name="password" value="CharsNumbers">
+            <label for="CharsNumbers">Create your password with characters and numbers</label>
+            <br>
+            <input type="radio" id="CharsNumbersSymbols" name="password" value="CharsNumbersSymbols">
+            <label for="CharsNumbersSymbols">Create your password with characters, numbers and symbols</label>
+    </div>
+    <div class="passwordFormSubmit">
+            <button type="button" id="generatePassword">Generate password</button>
+    </div>
+    <div id="password"></div>
+    <script src="index.js"></script>
+</body>
+</html>
