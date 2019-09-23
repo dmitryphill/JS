@@ -109,7 +109,7 @@ function findRating (arr){
     let rate;
     for (let i = 0; i < arr.length; i++) {
     rate = ((arr[i].rating - arr[length].rating)/arr[length].rating)*100;
-    arr[i].rate = "~ " + parseInt(rate) + "% from leader"}
+    arr[i].rate = "~ " + rate.toFixed(2) + "% from leader"}
 }
 findRating(StudentsListRate)
 
