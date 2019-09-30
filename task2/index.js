@@ -53,8 +53,8 @@ password.onchange = function checkPassword (){
 };
 
 const logInForm = document.getElementById("logInForm");
-logInForm.onsubmit = function writeData (onsubmit){
-    onsubmit.preventDefault()
+logInForm.onsubmit = function writeData (event){
+    event.preventDefault();
     console.log(email.value +" "+ password.value);
     
 };
