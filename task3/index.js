@@ -145,3 +145,23 @@ gp2.addEventListener('click', async () =>  {
     }
     console.timeEnd("Async");
     })
+
+//перевірка активності юзера
+const ActReg = document.getElementById("ar");
+ActReg.onclick = function Activity() {
+    let time;
+    window.addEventListener('load', reset, true);
+    const events = ['mousedown', 'mousemove', 'keypress', 'scroll', 'touchstart'];
+    events.forEach(function(name) {
+    document.addEventListener(name, reset, true); 
+    });
+
+    function actMessage() {
+        alert("Are you here?");
+    };
+
+    function reset() {
+        clearTimeout(time);
+        time = setTimeout(actMessage, 3000);
+    };
+};
